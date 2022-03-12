@@ -1,9 +1,12 @@
 {
-  "name": "Sample",
+  "name": "soundhouse-ayase",
   "version": "1.0.0",
   "manifest_version": 3,
-  "content_scripts": [{
-    "matches": ["https://www.soundhouse.co.jp/products/detail/item/*"],
-    "js": ["main.ts"]
-  }]
+  "content_scripts": [
+    {
+      "matches": ["https://www.soundhouse.co.jp/products/detail/item/*"],
+      "js": ["main.js"],
+      "css": ["style.css"]
+    }
+  ]
 }

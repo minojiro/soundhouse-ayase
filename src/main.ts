@@ -2,11 +2,12 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./index.css";
 
-console.log("run");
-if (!document.getElementById("app")) {
+const APP_ID = "soundhouse-ayase";
+if (!document.getElementById(APP_ID)) {
+  console.log(APP_ID);
   const el = document.createElement("div");
-  el.id = "app";
+  el.id = APP_ID;
   document.body.appendChild(el);
 }
 
-createApp(App).mount("#app");
+createApp(App).mount(`#${APP_ID}`);

@@ -9,13 +9,13 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.5.0",
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23",
-    "vite-plugin-chrome-extension": "^0.0.7",
     "vue": "^3.2.25"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.8",
+    "rollup-plugin-copy": "^3.4.0",
     "@vitejs/plugin-vue": "^2.2.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
