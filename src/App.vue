@@ -1,21 +1,29 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Dialog from "./components/Dialog.vue";
+import Button from "./components/Button.vue";
+import Image from "./components/Image.vue";
+import ayaseImage from "./assets/ayase.jpg";
+
+import { onMounted, ref } from "vue";
+const isOpen = ref(false);
+
+const close = () => {
+  isOpen.value = false;
+};
+
+onMounted(() => {
+  isOpen.value = true;
+});
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <Dialog :isOpen="isOpen">
+    <p class="text-lg">
+      YOASOBI の Ayase は、<br />この環境だけで『夜に駆ける』を作ったんだよ。<br />わかった？
+    </p>
+    <p class="py-5">
+      <Image :src="ayaseImage" />
+    </p>
+    <Button @click="close"> わかった </Button>
+  </Dialog>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

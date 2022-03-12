@@ -1,11 +1,14 @@
-# Vue 3 + Typescript + Vite
+# Soundhouse で DTM 関連商品を買おうとすると止めてくれるやつ
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![a2a094b666c9dc47d701467ae195b074](https://user-images.githubusercontent.com/5090244/158006432-127fddfc-44b9-44ed-a527-38b8f9b2bace.gif)
 
-## Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## 使い方
 
-## Type Support For `.vue` Imports in TS
+```
+pnpm install
+pnpm build
+```
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+Chrome の拡張機能で dist ディレクトリを読み込む
+
